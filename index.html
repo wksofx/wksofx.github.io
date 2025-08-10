@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of [Your Name]">
-    <title>[Your Name] - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Navigation -->
     <header>
-        <h1>[Your Name]</h1>
-        <p>[Your Tagline / Role]</p>
+        <nav class="navbar">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>A short paragraph about who you are, what you do, and what you’re passionate about.</p>
-        </section>
+    <!-- Hero Section with Video -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="mangofxport.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Creative Developer & Designer</h1>
+            <p>Crafting engaging digital experiences</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Short description of the project.</p>
-                <a href="#">View Project</a>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            I’m a passionate developer with a love for blending design and
+            technology. My goal is to create digital experiences that are
+            beautiful, functional, and user-friendly.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>My Work</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/project-1.jpg" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
             </div>
-        </section>
+            <div class="project-card">
+                <img src="assets/project-2.jpg" alt="Project 2" />
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/project-3.jpg" alt="Project 3" />
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© [Year] [Your Name]. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
